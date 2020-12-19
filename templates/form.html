@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block body %}
+
+<!-- inputs -->
+<form action="/reccomend" method="POST">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="inputReadonly">Readonly input</label>
+        <input class="form-control" type="text" id="inputReadonly" placeholder="Readonly input here..." readonly>
+    </div>
+
+    <!-- select -->
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="custom-select" id="exampleFormControlSelect1">
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+            <option>Four</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="selectDisabled">Disabled select</label>
+        <select class="custom-select" id="selectDisabled" disabled>
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+            <option>Four</option>
+        </select>
+    </div>
+
+    <!-- select with multiple choices -->
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select class="custom-select" id="exampleFormControlSelect2" multiple>
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+            <option>Four</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="multipleSelectDisabled">Disabled multiple select</label>
+        <select class="custom-select" id="multipleSelectDisabled" multiple disabled>
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+            <option>Four</option>
+        </select>
+    </div>
+
+    <!-- textarea -->
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="textareaDisabled">Disabled textarea</label>
+        <textarea class="form-control" id="textareaDisabled" rows="3" disabled></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">送信</button>
+</form>
+
+{% endblock %}
