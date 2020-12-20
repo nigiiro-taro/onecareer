@@ -7,16 +7,16 @@ def form():
     return render_template("form.html")
 
 
-@app.route('/reccomend', methods=["POST"])
+@app.route('/reccomend', methods=["GET", "POST"])
 def reccomend():
     """ reccomendページ """
     return render_template('reccomend.html')
 
 
-# @app.route('/careerplan')
-# def reccomend():
-#     """ reccomendページ """
-#     return render_template('careerplan.html')
+@app.route('/careerplan')
+def careerplan():
+    """ reccomendページ """
+    return render_template('careerplan.html')
 
 
 if __name__ == '__main__':
